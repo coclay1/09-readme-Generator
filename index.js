@@ -13,32 +13,48 @@ const questions = function () {
             },
             {
                 type: 'input',
-                name: 'title',
-                message: 'What is the title of your project?'
+                name: 'description',
+                message: 'Please enter a short description.'
             },
             {
                 type: 'input',
-                name: 'title',
-                message: 'What is the title of your project?'
+                name: 'installation',
+                message: 'Are there any installation requirements?'
             },
             {
                 type: 'input',
-                name: 'title',
-                message: 'What is the title of your project?'
+                name: 'usage',
+                message: 'What is the usage for this app?'
+            },
+            {
+                type: 'input',
+                name: 'license',
+                message: 'What is the License used?'
+            },
+            {
+                type: 'input',
+                name: 'contributor',
+                message: 'Who contributed?'
+            },
+            {
+                type: 'input',
+                name: 'testing',
+                message: 'Any additional testing?'
             },
         ])
+        .then((answers => {
+            const readmeContent = generateMarkdown(answers);
+            fs.writeFile('README.md', readmeContent, (err) =>
+            err ? console.log(err) : console.log('Success!'))
+        }))
 }
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() { 
+    questions()
+}
 
 // Function call to initialize app
 init();
-
-
-// ['What is the title of your project?', 'Please enter a short description.',
-// 'Are there any installation requirements?', 'What is the usage for this app?',
-// 'What is the License used?', 'Who contributed?', 'Any additional testing?'];
