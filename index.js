@@ -1,8 +1,10 @@
 // TODO: Include packages needed for this application
+// required packages to prompt user and write file
 const fs = require('fs')
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
+// prompt user to answer question to generate readme
 const questions = function () {
     inquirer
         .prompt([
@@ -63,6 +65,7 @@ const questions = function () {
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
+// runs function upon typing node index.js
 function init() { 
     questions()
 }
