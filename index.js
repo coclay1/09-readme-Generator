@@ -43,6 +43,16 @@ const questions = function () {
                 name: 'testing',
                 message: 'Any additional testing?'
             },
+            {
+                type: 'input',
+                name: 'question',
+                message: 'Please enter your github username. i.e (coclay1)'
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'Please enter your email address. i.e (coc.lay97@gmail.com)'
+            }
         ])
         .then((answers => {
             const readmeContent = generateMarkdown(answers);

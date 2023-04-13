@@ -30,6 +30,9 @@ function generateMarkdown(data) {
   ${data.license}
   ## Testing
   ${data.testing}
+  ## Questions
+  Please contact me at [${data.question}](https://github.com/${data.question}) or at [${data.email}](${data.email}) 
+  if you have further questions on how to use the app or if you wish to contribute to the project.
 `;
 }
 
