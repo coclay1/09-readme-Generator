@@ -40,6 +40,9 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ![badge](${renderLicenseBadge(data.license)})
+  <br />
+
   ## Description
   ${data.description}
 
@@ -49,7 +52,7 @@ function generateMarkdown(data) {
   -[Usage](#usage)
 
   -[Contributors](#contributors)
-
+  
   -[License](#license)
 
   -[Testing](#testing)
@@ -57,12 +60,14 @@ function generateMarkdown(data) {
   -[Questions](#questions)
 
   ## Installation
-  ${data.installation}
+  This app requires ${data.installation}
 
   ## Usage
   ${data.usage}
 
   ## Contributors
+  [shields.io](https://shields.io/)
+  
   ${data.contributor}
 
   ## License
@@ -74,9 +79,14 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Questions
-  Please contact me at [${data.question}](https://github.com/${data.question}) or at [${data.email}](${data.email}) 
+  Please contact me at [github.com/${data.question}](https://github.com/${data.question}) or at [${data.email}](${data.email}) 
   if you have further questions on how to use the app or if you wish to contribute to the project.
 `;
 }
 
 module.exports = generateMarkdown;
+
+// Readme Generator
+// This app requires node.js, inquierer and shields.io
+// The user will have to install node.js and inquierer at version 8.2.4.
+// This app was built to generate a professional readme. This app will prompt the user with questions that when answered will create a readme.md file with answers provided by the user. This app will render a badge based on the license chosen with links to said license. This app also has a function table of contents and links on how to contact the user.
