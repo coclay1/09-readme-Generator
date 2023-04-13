@@ -23,7 +23,8 @@
   This app requires The user will have to install node.js and inquierer at version 8.2.4.
 
   ## Usage
-   This app usess node.js, inquierer and shields.io
+   This app uses node.js, inquierer and shields.io
+   [Video Demo](./Untitled_%20Apr%2012%2C%202023%209_38%20PM.webm)
 
   ## Contributors
   [shields.io](https://shields.io/)
