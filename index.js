@@ -2,7 +2,6 @@
 const fs = require('fs')
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const { default: Choices } = require('inquirer/lib/objects/choices');
 // TODO: Create an array of questions for user input
 const questions = function () {
     inquirer
