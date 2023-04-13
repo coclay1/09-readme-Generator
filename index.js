@@ -2,6 +2,7 @@
 const fs = require('fs')
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
+const { default: Choices } = require('inquirer/lib/objects/choices');
 // TODO: Create an array of questions for user input
 const questions = function () {
     inquirer
@@ -27,9 +28,10 @@ const questions = function () {
                 message: 'What is the usage for this app?'
             },
             {
-                type: 'input',
+                type: 'list',
                 name: 'license',
-                message: 'What is the License used?'
+                message: 'What is the License used?',
+                choices: ['MIT', 'Mozilla Public License 2.0', 'The Unlicense']
             },
             {
                 type: 'input',
