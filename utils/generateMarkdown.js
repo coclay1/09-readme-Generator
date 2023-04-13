@@ -87,6 +87,6 @@ function generateMarkdown(data) {
 module.exports = generateMarkdown;
 
 // Readme Generator
-// This app requires node.js, inquierer and shields.io
-// The user will have to install node.js and inquierer at version 8.2.4.
-// This app was built to generate a professional readme. This app will prompt the user with questions that when answered will create a readme.md file with answers provided by the user. This app will render a badge based on the license chosen with links to said license. This app also has a function table of contents and links on how to contact the user.
+// This app uses node.js, inquirer and shields.io
+// The user will have to install node.js version 16.0.0+ and inquirer at version 8.2.4.
+// This app was built to generate a professional readme. This app will prompt the user with questions that when answered will create a readme.md file with answers provided by the user.  This app will render a badge based on the license chosen with links to said license. This app also has a function table of contents and links on how to contact the user.

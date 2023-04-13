@@ -4,7 +4,7 @@
   <br />
 
   ## Description
-  This app was built to generate a professional readme. This app will prompt the user with questions that when answered will create a readme.md file with answers provided by the user. This app will render a badge based on the license chosen with links to said license. This app also has a function table of contents and links on how to contact the user.
+  This app was built to generate a professional readme. This app will prompt the user with questions that when answered will create a readme.md file with answers provided by the user.  This app will render a badge based on the license chosen with links to said license. This app also has a function table of contents and links on how to contact the user.
 
   ## Table of Contents
   -[Installation](#installation)
@@ -20,11 +20,11 @@
   -[Questions](#questions)
 
   ## Installation
-  This app requires The user will have to install node.js and inquierer at version 8.2.4.
+  This app requires The user will have to install node.js version 16.0.0+ and inquirer at version 8.2.4.
 
   ## Usage
-   This app uses node.js, inquierer and shields.io
-   [Video Demo](./Untitled_%20Apr%2012%2C%202023%209_38%20PM.webm)
+  This app uses node.js, inquirer and shields.io
+  [Video Demo](./Untitled_%20Apr%2012%2C%202023%209_51%20PM.webm)
 
   ## Contributors
   [shields.io](https://shields.io/)
@@ -40,5 +40,5 @@
   N/A
 
   ## Questions
-  Please contact me at [github.com/coclay1](https://github.com/coclay1) or at [coc.lay97@gmail.com](coc.lay97@gmail.com) 
+  Please contact me at [github.com/coclay1](https://github.com/coclay1) or at [coc.lay9@gmail.com](coc.lay97@gmail.com) 
   if you have further questions on how to use the app or if you wish to contribute to the project.
